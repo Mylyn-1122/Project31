@@ -44,7 +44,7 @@ function draw() {
   
 
   if (frameCount % 90 === 0){
-    particles.push(new Particle(random(width/2-30, width/2+30)), 10, 10)
+    particles.push(new Particle(random(width/2-30, width/2+30), 10, 10))
   }
 
   
@@ -60,7 +60,7 @@ function draw() {
   }
 
 
-  for (var i = 0; i < particles.length; j++){
+  for (var i = 0; i < particles.length; i++){
     particles[i].display();
   }
 
